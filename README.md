@@ -1,4 +1,4 @@
-# React + Vite
+# MERN APP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Responsive Social Media App Made using (MERN - React Query - vite)
 
