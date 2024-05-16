@@ -76,7 +76,7 @@ const Posts = ({ feedType, username, id }) => {
           <PostSkeleton />
         </div>
       )}
-      {!isPending && !isRefetching && data?.pages.length === 0 && (
+      {!isPending && !isRefetching && data?.pages[0].length === 0 && (
         <p className="text-center my-4">No posts in this tab. Switch 👻</p>
       )}
       {!isPending && !isRefetching && <div>{content}</div>}

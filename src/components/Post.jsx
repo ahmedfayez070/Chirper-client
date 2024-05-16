@@ -123,7 +123,10 @@ const Post = ({ post, innerRef, ...props }) => {
             to={`/profile/${postOwner.username}`}
             className="w-8 h-8 rounded-full overflow-hidden"
           >
-            <img src={postOwner.profileImg || "/avatar-placeholder.png"} />
+            <img
+              src={postOwner.profileImg || "/avatar-placeholder.png"}
+              alt="user profile photo"
+            />
           </Link>
         </div>
         <div className="flex flex-col flex-1">
@@ -157,7 +160,7 @@ const Post = ({ post, innerRef, ...props }) => {
               <img
                 src={post.img}
                 className="h-80 object-contain rounded-lg border border-gray-700"
-                alt=""
+                alt="post photo"
               />
             )}
           </div>
@@ -198,6 +201,7 @@ const Post = ({ post, innerRef, ...props }) => {
                                 comment.user.profileImg ||
                                 "/avatar-placeholder.png"
                               }
+                              alt="user profile photo"
                             />
                           </div>
                         </div>

@@ -85,6 +85,7 @@ const NotificationPage = () => {
                         notification.from.profileImg ||
                         "/avatar-placeholder.png"
                       }
+                      alt="user profile photo"
                     />
                   </div>
                 </div>

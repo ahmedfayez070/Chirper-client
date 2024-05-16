@@ -49,7 +49,10 @@ const CreatePost = () => {
     <div className="flex p-4 items-start gap-4 border-b border-gray-700">
       <div className="avatar">
         <div className="w-8 rounded-full">
-          <img src={currentUser.profileImg || "/avatar-placeholder.png"} />
+          <img
+            src={currentUser.profileImg || "/avatar-placeholder.png"}
+            alt="user profile photo"
+          />
         </div>
       </div>
       <form className="flex flex-col gap-2 w-full" onSubmit={handleSubmit}>
@@ -71,6 +74,7 @@ const CreatePost = () => {
             <img
               src={img}
               className="w-full mx-auto h-72 object-contain rounded"
+              alt="post photo"
             />
           </div>
         )}

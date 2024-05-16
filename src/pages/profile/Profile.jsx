@@ -145,6 +145,7 @@ const ProfilePage = () => {
                         user?.profileImg ||
                         "/avatar-placeholder.png"
                       }
+                      alt="user profile image"
                     />
                     <div className="absolute top-5 right-3 p-1 bg-primary rounded-full group-hover/avatar:opacity-100 opacity-0 cursor-pointer">
                       {isMyProfile && (
